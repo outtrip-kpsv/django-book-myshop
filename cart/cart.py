@@ -30,7 +30,7 @@ class Cart(object):
         self.session.modified = True
 
     def remove(self, product):
-        """Удаление товатов из корзины"""
+        """Удаление товаров из корзины"""
         product_id = str(product.id)
         if product_id in self.cart:
             print(self.cart)
